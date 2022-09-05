@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TAJ SKYLINE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        .
+    </head>
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        background-color: rgb(0,0,0,0.9);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .nav-menu li{
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    .nav-menu li a{
+        color: white;
+        transition: 0.6s;
+    }
+    .nav-menu li a:hover{
+        color:brown;
+    }
+    
+    .main-head{
+        background-image: url("d.jpg");
+        height: 140vh;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(0,0,0,0.7);
+        background-blend-mode: darken;
+    }
+
+    .banner-text{
+        top:40%;
+        left:20%;
+        position: absolute;
+        color: snow;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+
+    .banner-text h1{
+        font-size: 40px;
+    }
+    .banner-text{
+        font-size: 18px;
+    }
+    .btn{
+        top: 76%;
+        left:20%;
+        position: absolute;
+        line-height: 1.8;
+    }
+
+    
+    .btn button:hover{
+        background: brown;
+        transform: scale(1.1);
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin: 100px;
+    }
+
+    .container h1{
+        color: darkgray;
+    }
+
+    .box{
+        margin: 20px;
+        height: 550px;
+        text-align: justify;
+        padding: 40px;
+        color:snow;
+        line-height: 1.6;
+        width:340px;
+        box-shadow: 0 5px 10px black;
+    }
+    .box1{
+        background-image: url("s1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0,0,0,0,7);
+        background-blend-mode: darken;
+    }
+    .btn button:hover{
+        background: brown;
+        transform: scale(1.1);
+    }
+
+    .btn1 button{
+        width: 200px;
+        height: 30px;
+        border-radius: 25px;
+        background: transparent;
+        color: snow;
+        font-size: 18px;
+        border:1px solid brown;
+        transition: 0.5s;
+        margin-top: 20px;
+    }
+    .btn1 button:hover{
+        background: brown;
+        transform: scale(1.1);
+    }
+
+    .box2{
+        background-image: url("s1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0,0,0,0,7);
+        background-blend-mode: darken;
+    }
+
+    .btn2 button{
+        width: 200px;
+        height: 30px;
+        border-radius: 25px;
+        background: transparent;
+        color: snow;
+        font-size: 18px;
+        border:1px solid brown;
+        transition: 0.5s;
+        margin-top: 20px;
+    }
+    .btn2 button:hover{
+        background: brown;
+        transform: scale(1.1);
+    }
+
+    .box3{
+        background-image: url("s1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0,0,0,0,7);
+        background-blend-mode: darken;
+    }
+
+    .btn3 button{
+        width: 200px;
+        height: 30px;
+        border-radius: 25px;
+        background: transparent;
+        color: snow;
+        font-size: 18px;
+        border:1px solid brown;
+        transition: 0.5s;
+        margin-top: 20px;
+    }
+    .btn3 button:hover{
+        background: brown;
+        transform: scale(1.1);
+    }
+
+    .container-2{
+        background-image: url("Customer.jpg");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0,0,0,0,0.7);
+        background-blend-mode: darken;
+        height: 120vh;
+
+    }
+
+    .content h1{
+        top: 200%;
+        text-align: center;
+        font-size: 68px;
+        color: black;
+        padding: 100px;
+        
+    }
+
+    .content p{
+        font-size: 30px;
+        padding: 45px 100px;
+        letter-spacing: 2px;
+        text-align: justify;
+        color: darkred;
+    }
+
+    .contact-box{
+        border: none;
+        border-radius: 25px;
+        width:500px;
+        height:400px;
+        position: relative;
+        left: 25%;
+        margin:100px;
+        background-image: linear-gradient(to left, skyblue, gray);
+    }
+
+    .contact-box h2{
+        text-align: center;
+        padding:10px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin:20px;
+        
+    }
+
+    .contact-box button{
+        width: 200px;
+        height: 30px;
+        border-radius: 25px;
+        background: transparent;
+        color: snow;
+        font-size: 18px;
+        border:1px solid white;
+        transition: 0.5s;
+        margin: 20px;
+    }
+    .contact-box button:hover{
+        background:green;
+        transform: scale(1.1);
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid;
+        width: 100%;
+        height: 80vh;
+        background-image: url("black.jpg");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0,0,0,0,0.8);
+        background-blend-mode: darken;
+    }
+
+    .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.div_1{
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 120px;
+    line-height: 2;
+}
+
+.div_1 h3{
+    font-size: 25px;
+    color: deepskyblue;
+
+}
+
+.div_1 li a{
+    color: snow;
+    transition: 0.5s;
+
+}
+
+.div_1 li a:hover{
+    color: crimson;
+
+}
+
+.fa-facebook{
+    width: 40px;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fa-facebook{
+    top:509%;
+        left:73%;
+        position: absolute;
+        color: snow;
+        line-height: 0.4;
+        letter-spacing: 1px;
+}
+
+
+.fa-instagram{
+    width: 40px;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fa-instagram{
+    top:515%;
+        left:73%;
+        position: absolute;
+        color: snow;
+        line-height: 0.3;
+        letter-spacing: 1px;
+}
+
+span{
+    color: black;
+}
+    
+
+
+    .btn button{
+        width: 165px;
+        height: 50px;
+        border-radius: 23px;
+        background: transparent;
+        color: snow;
+        font-size: 18px;
+        border:1px solid grey;
+        transition: 0.5s;
+        margin-top: 20px;
+    }
+    a:link{
+        color: antiquewhite;
+
+    }
+    .btn button:hover{
+        background: brown;
+        transform: scale(1.1);
+    }
+
+
+
+    </style>
+    <body>
+
+        <!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+
+
+        <div class="navbar">
+            <div class="nav-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="ratings.html">RATINGS</a></li>
+            </div>
+        </div>
+        <div class="main-head">
+
+            <div class="banner-text">
+                <h1><span>TAJ SKYLINE</span></h1>
+                <h2>Our <span>HOTEL</span> is Best in the<span> INDIA</span></h2>
+                <h3>WE have <span> 5 star</span> rating on <span>Book-Hotel-online</span></h3>
+            </div>
+            <div class="btn">
+                
+                <button>
+                <a href="form.html" style="color:antiquewhite;">
+              Book Here
+            </a>
+            </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box box1">
+                <h1>Our services</h1>
+                <p>Hotel services, their number and the amount of people engaged in them depends on the size of the hotel as well as on its status. Typically, the basic hotel services include reception guests, room service, food service, including restaurants in the hotel, and security. Sometimes in the small hotels the duties of security, a cook and a cleaner are performed by the owner himself.</p>
+                <div class="btn1">
+                    <button>Check</button>
+                </div>
+
+                </div>
+                <div class="box box2">
+                    <h1>Hotel Rooms</h1>
+                    <p>In hotels the rooms are categorised and priced according to the type of bed, number of occupants, number of bed, decor, specific furnishings or features and nowadays special even the special theme available in the room.</p>
+                
+                <div class="btn2">
+                    <button>Book</button>
+                </div>
+            </div>
+
+            <div class="box box3">
+                <h1>Buffet</h1>
+                <p>There are specific buffets for each type of hotel and also as not, for every occasion. That is why it is important to analyze the service you want to offer, the use you want to give it, with what type of customer we are going to work, study the space and the capacity of diners.</p>
+              <div class="btn3">
+                <button>Meals</button>
+              </div>            
+            </div>
+        </div>
+
+        <!----------Third head----------------->
+
+        <div class="container-2">
+            <div class="content">
+                <h1>Happy Customers</h1>
+                <p><b>Five-star hotels are properties that offer their guests the highest levels of luxury through personalized services, a vast range of amenities, and sophisticated accommodations. Though there is no standard rating system for hotels, properties earn 5-star distinction by providing guests experiences that meet or exceed even the highest of expectations for comfort, décor, and luxury.</b></p>
+            </div>
+        </div>
+
+          <!---------------fourth head---------->
+
+        <div class="contact-box">
+            <h2>BOOK APPOINTMENT</h2>
+            <div class="form">
+                <input type="text" placeholder="Name">
+                <br>
+                <input type="text" placeholder="E-mail">
+                <br>
+                <input type="text" placeholder="subject">
+            </div>
+            <br>
+            <button>Submit</button>
+        </div>
+
+        <!----footer--->
+         
+        <div class="footer">
+            <div class="div_1 div1">
+                <h3>Links</h3>
+
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Motel</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Halls</a></li>
+
+
+            </div>
+
+
+
+            <div class="div_1 div3">
+                <h3>services</h3>
+                <li><a href="">Swimming pool</a></li>
+                <li><a href="">Gym</a></li>
+                <li><a href="">Parking area</a></li>
+                <li><a href="">Disco</a></li>
+            </div>
+
+
+
+            <div class="div_1 div4">
+                <h3>social links</h3>
+                <li><a href="https://www.facebook.com/dirgh.pandya.5">facebook</a></li>
+                <li><a href="https://www.instagram.com/_dirghhh12_/">instagram</a></li>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+

@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Hotel Booking Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    </head>
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("11.jpeg");
+              background-size: cover;
+              background-position: center;
+        }
+          .box{
+             
+              max-width: 350px;
+              border: 1px solid #ced4da;
+              margin:10% auto 0;
+              height: 75vh;
+          }
+
+          .radio-btn{
+            margin: 0 20px;
+          }
+
+          .radio-btn{
+            margin: 20px 10px 0;
+            box-shadow: none;
+          }
+
+          .radio-btn .btn::after{
+            content: '';
+            height: 15px;
+            width: 15px;
+            top:-2px;
+            left:-1px;
+            background-color: #fff;
+            position: relative;
+            display: inline-block;
+            border: 3px solid #fff;
+            visibility: visible;
+            border-radius: 50%;
+          }
+
+          .radio-btn .btn:checked::after{
+            content: '';
+            background-color: #000;
+            transition: 0.5s;
+          }
+
+          .radio-btn span{
+            color: #fff;
+            margin-right:5px;
+            font-size: 12px;
+          }
+          .bf{
+            padding: 0 20px 20px;
+            color: #fff;
+          }
+          .bf label{
+            margin-bottom: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #fff;
+          }
+          input::placeholder{
+            color: #fff !important;
+          }
+          .input-grp{
+            width: 151px;
+            display: inline-block;
+          }
+          .form-control{
+            font-size: 12px;
+            border-radius: 0;
+            color: #fff;
+            background: transparent!important;
+            box-shadow: none!important;
+          }
+          .select-date::-webkit-inner-spin-button,
+          .select-date::-webkit-outter-spin-button
+          {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          .select-date::-webkit-calender-picker-indicator{
+            background: transparent!important;
+          }
+          .custom-select{
+            color: #fff!important;
+            font-size: 12px!important;
+            border: 1px solid #ced4da!important;
+            box-shadow:none!important;
+            border-radius: 0!important;
+            background: transparent!important;
+          }
+          .custom-select option{
+             color: #333;
+          }
+          .flight{
+            width: 100%;
+            padding: 9px 0;
+            font-size: 12px;
+            border:1px solid #ced4da!important;
+            background: transparent;
+            box-shadow: none!important;
+            border-radius: 0!important;
+          }
+          .flight::hover{
+            background: #fff!important;
+            color: #000!important;
+            transition: 0.5s;
+          }
+    </style>
+    <body>
+      <div class="box">
+        <div class="radio-btn">
+            <input type="radio" class="btn" name="check"><span>Floor-1</span>
+            <input type="radio" class="btn" name="check"><span>Floor-2</span>
+            <input type="radio" class="btn" name="check"><span>Floor-3</span>
+        </div>
+<div class="bf">
+    <label>Arriving From</label>
+    <input type="text" class="form-control" placeholder="city name">
+    <label>Arriving to</label>
+    <input type="text" class="form-control" placeholder="city name">
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="name">
+    <div class="input-grp">
+      <label>Check-In</label>
+    <input type="date" class="form-control select-date">
+    </div>
+    <div class="input-grp">
+      <label>Check-Out</label>
+    <input type="date" class="form-control select-date">
+    </div>
+    <div class="input-grp">
+      <label>Adults</label>
+    <input type="number" class="form-control" value="1">
+    </div>
+    <div class="input-grp">
+      <label>Children</label>
+    <input type="number" class="form-control" value="0">
+    </div>
+    <div class="input-grp">
+      <label>Room-type</label>
+      <select class="custom-select">
+        <option value="1">Deluxe Room</option>
+        <option value="2">Double-Double Room</option>
+        <option value="2">Duplex Room</option>
+
+
+      </select>
+    </div>
+    <div class="input-grp">
+      <button type="button" class="btn btn-primary flight">Show Rooms</button>
+    </div>
+</div>
+      </div>
+    </body>
+</html>
